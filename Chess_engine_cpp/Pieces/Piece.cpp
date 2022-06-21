@@ -2,6 +2,7 @@
 
 Piece::Piece(int x, int y, int colour)
 {
+	setMoves();
 	setPosition(x, y);
 	setColour(colour);
 }

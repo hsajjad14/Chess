@@ -4,6 +4,7 @@ pawn::pawn(int x, int y, int colour):
 	Piece(x,y,colour)
 {
 
+
 }
 
 void pawn::setMoves() {

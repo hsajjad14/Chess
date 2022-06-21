@@ -33,3 +33,8 @@ public:
 
 };
 
+#define BOARD_DIMENSION 8
+
+void setBishopMoves(std::vector<std::pair<int, int>>& moves);
+void setRookMoves(std::vector<std::pair<int, int>>& moves);
+
