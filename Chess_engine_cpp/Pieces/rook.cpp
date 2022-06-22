@@ -1,9 +1,9 @@
 #include "rook.h"
 
-rook::rook(int x, int y, int colour):
+rook::rook(int x, int y, colours colour):
 	Piece(x, y, colour)
 {
-
+	category = rookType;
 }
 
 void rook::setMoves()

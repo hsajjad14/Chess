@@ -1,6 +1,6 @@
 #include "Piece.h"
 
-Piece::Piece(int x, int y, int colour)
+Piece::Piece(int x, int y, colours colour)
 {
 	setMoves();
 	setPosition(x, y);
@@ -13,7 +13,7 @@ void Piece::setPosition(int x, int y)
 	this->position.second = y;
 }
 
-void Piece::setColour(int colour)
+void Piece::setColour(colours colour)
 {
 	this->colour = colour;
 }

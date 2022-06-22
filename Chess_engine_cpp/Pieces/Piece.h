@@ -2,9 +2,27 @@
 #include <vector>
 #include <utility>
 
+
+enum pieceCategory {
+	pawnType,
+	rookType,
+	knightType,
+	bishopType,
+	queenType,
+	kingType
+};
+
+enum  colours
+{
+	white,
+	black
+};
+
 class Piece
 {
 protected:
+	pieceCategory category;
+
 	// white = 0, black = 1
 	colours colour;
 	
@@ -20,14 +38,14 @@ public:
 	// [(2, 1), (2, -1), (-2, 1), (-2, -1), (1, -2), (1, 2), (-1, 2), (-1, -2) ]
 	std::vector<std::pair<int, int>> moves;
 
-	Piece(int x, int y, int colour);
+	Piece(int x, int y, colours colour);
 	~Piece();
 
 	std::pair<int, int> getPosition();
 	void setPosition(int x, int y);
 
 	int getColour();
-	void setColour(int colour);
+	void setColour(colours colour);
 
 	virtual void setMoves() = 0;
 
@@ -37,10 +55,4 @@ public:
 
 void setBishopMoves(std::vector<std::pair<int, int>>& moves);
 void setRookMoves(std::vector<std::pair<int, int>>& moves);
-
-enum  colours
-{
-	white, 
-	black
-};
 

@@ -1,9 +1,9 @@
 #include "pawn.h"
 
-pawn::pawn(int x, int y, int colour):
+pawn::pawn(int x, int y, colours colour):
 	Piece(x,y,colour)
 {
-
+	category = pawnType;
 
 }
 

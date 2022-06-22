@@ -1,8 +1,9 @@
 #include "king.h"
 
-king::king(int x, int y, int colour)
+king::king(int x, int y, colours colour):
+	Piece(x,y,colour)
 {
-
+	category = kingType;
 }
 
 void king::setMoves()

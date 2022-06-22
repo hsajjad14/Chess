@@ -8,6 +8,5 @@ int main() {
 	board myBoard = board();
 
 
-
 	return 0;
 }

@@ -1,9 +1,9 @@
 #include "queen.h"
 
-queen::queen(int x, int y, int colour) :
+queen::queen(int x, int y, colours colour) :
 	Piece(x, y, colour)
 {
-
+	category = queenType;
 }
 
 void queen::setMoves()

@@ -3,10 +3,10 @@
 class bishop :
     public Piece
 {
-    bishop(int x, int y, int colour);
 
+public:
+    bishop(int x, int y, colours colour);
     void setMoves();
-
     ~bishop();
 };
 

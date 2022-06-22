@@ -1,8 +1,9 @@
 #include "bishop.h"
 
-bishop::bishop(int x, int y, int colour) :
+bishop::bishop(int x, int y, colours colour) :
 	Piece(x, y, colour)
 {
+	category = bishopType;
 }
 
 void bishop::setMoves()

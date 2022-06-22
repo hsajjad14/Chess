@@ -127,15 +127,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board\board.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="Pieces\king.cpp" />
+    <ClCompile Include="Pieces\bishop.cpp" />
     <ClCompile Include="Pieces\knight.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pieces\pawn.cpp" />
     <ClCompile Include="Pieces\Piece.cpp" />
+    <ClCompile Include="Pieces\rook.cpp" />
+    <ClCompile Include="Pieces\queen.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board\board.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Pieces\king.h" />
+    <ClInclude Include="Pieces\bishop.h" />
     <ClInclude Include="Pieces\knight.h" />
     <ClInclude Include="Pieces\pawn.h" />
     <ClInclude Include="Pieces\Piece.h" />
+    <ClInclude Include="Pieces\rook.h" />
+    <ClInclude Include="Pieces\queen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

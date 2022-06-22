@@ -4,7 +4,7 @@ class knight :
     public Piece
 {
 public:
-    knight(int x, int y, int colour);
+    knight(int x, int y, colours colour);
     void setMoves();
     ~knight();
 };

@@ -1,9 +1,9 @@
 #include "knight.h"
 
-knight::knight(int x, int y, int colour):
+knight::knight(int x, int y, colours colour):
 	Piece(x, y, colour)
 {
-
+	category = knightType;
 }
 
 void knight::setMoves()

@@ -4,7 +4,7 @@ class king :
     public Piece
 {
 public:
-    king(int x, int y, int colour);
+    king(int x, int y, colours colour);
     void setMoves();
     ~king();
 };

@@ -3,7 +3,8 @@
 class queen :
     public Piece
 {
-    queen(int x, int y, int colour);
+public:
+    queen(int x, int y, colours colour);
     void setMoves();
     ~queen();
 };

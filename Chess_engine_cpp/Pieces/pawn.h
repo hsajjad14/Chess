@@ -5,7 +5,7 @@ class pawn :
 {
 public:
 
-    pawn(int x, int y, int colour);
+    pawn(int x, int y, colours colour);
 
     void setMoves();
 

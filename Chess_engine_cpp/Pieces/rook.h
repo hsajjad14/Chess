@@ -4,7 +4,7 @@ class rook :
     public Piece
 {
 public:
-    rook(int x, int y, int colour);
+    rook(int x, int y, colours colour);
     void setMoves();
     ~rook();
 };
