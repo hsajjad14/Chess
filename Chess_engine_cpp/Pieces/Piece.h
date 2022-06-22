@@ -6,7 +6,7 @@ class Piece
 {
 protected:
 	// white = 0, black = 1
-	int colour;
+	colours colour;
 	
 	// (x,y) position; x=row, y=colum; x=first, y=second
 	std::pair<int, int> position;
@@ -37,4 +37,10 @@ public:
 
 void setBishopMoves(std::vector<std::pair<int, int>>& moves);
 void setRookMoves(std::vector<std::pair<int, int>>& moves);
+
+enum  colours
+{
+	white, 
+	black
+};
 
