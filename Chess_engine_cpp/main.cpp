@@ -1,14 +1,13 @@
 #include <iostream>
+#include "main.h"
 
 using namespace std;
 
 int main() {
 	
-	while (true) {
-		// run game
+	board myBoard = board();
 
 
-	}
 
 	return 0;
 }

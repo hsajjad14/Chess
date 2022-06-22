@@ -15,7 +15,7 @@ struct tile
 class board
 {
 private:
-	std::unordered_map<std::pair<int, int>, tile*> positionsToPieceMap;
+	std::unordered_map<std::pair<int, int>, tile*> positionsToTileMap;
 public:
 	board();
 	tile* getTileAtPosition(std::pair<int, int> const& position);

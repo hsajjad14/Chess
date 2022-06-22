@@ -14,8 +14,8 @@ board::board()
 		}
 		for (int j = 0; j < BOARD_DIMENSION; j++) {
 
-			positionsToPieceMap[std::make_pair(i, j)] = new tile();
-			positionsToPieceMap[std::make_pair(i, j)]->colour = colour;
+			positionsToTileMap[std::make_pair(i, j)] = new tile();
+			positionsToTileMap[std::make_pair(i, j)]->colour = colour;
 
 			if (colour == black) {
 				colour = white;
@@ -27,3 +27,15 @@ board::board()
 		}
 	}
 }
+
+tile* board::getTileAtPosition(std::pair<int, int> const& position)
+{
+	// if non-existing position
+	if (positionsToTileMap.find(position) == positionsToTileMap.end()) {
+		return nullptr;
+	}
+
+	return positionsToTileMap[position];
+	
+}
+
